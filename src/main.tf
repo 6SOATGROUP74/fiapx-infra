@@ -17,6 +17,10 @@ resource "aws_s3_bucket" "bucket_upload" {
   bucket = "fiapx-bucket-upload-3"
 }
 
+resource "aws_s3_bucket" "bucket_upload" {
+  bucket = "fiapx-bucket-upload-final"
+}
+
 resource "aws_sqs_queue" "queue_upload" {
   name = "upload-file-fiapx.fifo"
   fifo_queue                = true
