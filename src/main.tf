@@ -14,7 +14,7 @@ terraform {
 }
 
 resource "aws_s3_bucket" "bucket_upload" {
-  bucket = "fiapx-bucket-upload-2601"
+  bucket = "fiapx-bucket-upload-3"
 }
 
 resource "aws_sqs_queue" "queue_upload" {
@@ -30,7 +30,7 @@ output "queue_url" {
 resource "aws_lambda_function" "example_lambda" {
   function_name    = "lambda-upload-file"
   runtime          = "python3.9"
-  role             = "arn:aws:iam::419232333143:role/LabRole"
+  role             = "arn:aws:iam::014732159800:role/LabRole"
   handler          = "lambda_handler.lambda_handler"
   filename         = "source/lambda_handler.zip"
 
