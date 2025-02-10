@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "bucket_upload" {
   bucket = "fiapx-bucket-upload-3"
 }
 
-resource "aws_s3_bucket" "bucket_upload" {
+resource "aws_s3_bucket" "bucket_upload_final" {
   bucket = "fiapx-bucket-upload-final"
 }
 
